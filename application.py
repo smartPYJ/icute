@@ -10,4 +10,18 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'hello world'
+    return render_template("index.html")
+
+
+@app.route ('/register')
+def register():
+    return render_template("register.html")
+
+
+@app.route ('/contestants')
+def contestant():
+    return render_template("cuties.html")
+
+@app.route ('/profile')
+def profile():
+    return render_template("profile.html")

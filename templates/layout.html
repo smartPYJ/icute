@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{% block title %} {% endblock %}</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for ('static', filename = 'css/bootstrap.css')}}">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="{{url_for ('static', filename = 'css/bootstrap.min.css')}}">
+
+    <!-- FontAwesome  {{url_for ('static', filename = '')}} CSS -->
+    <link rel="stylesheet" href="{{url_for ('static', filename = 'css/font-awesome.min.css')}}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{url_for ('static', filename = 'css/style.css')}}">
+</head>
+
+<body>
+    
+    <header class="site-header">
+        <div class="site-branding">
+            <h1 class="site-title"><a href="index.html" rel="home"><img
+                        src="{{url_for ('static', filename = 'images/logo.png')}}" alt="Logo"></a>
+            </h1>
+        </div><!-- .site-branding -->
+        <div class="hamburger-menu">
+            <div class="menu-icon">
+                <img src=" {{url_for ('static', filename = 'images/menu-icon.png')}}" alt="menu icon">
+            </div><!-- .menu-icon -->
+
+            <div class="menu-close-icon">
+                <img src="{{url_for ('static', filename = 'images/x.png')}}" alt="menu close icon">
+            </div><!-- .menu-close-icon -->
+        </div><!-- .hamburger-menu -->
+
+    </header>
+    <!-- .site-header -->
+
+    <nav class="site-navigation flex flex-column justify-content-between">
+       
+        <div class="site-branding d-none d-lg-block ">
+            <h1 class="site-title"><a href="{{ url_for ('index')}}" rel="home"><img
+                        src=" {{url_for ('static', filename = 'images/logo2.png')}}" alt="Logo"></a></h1>
+        </div>
+
+        <ul class="main-menu flex flex-column justify-content-center">
+            <li class="current-menu-item"><a href="{{url_for('index')}}">Home</a></li>
+            <li><a href="register.html">Contest</a></li>
+            <li><a href="contestants.html">Contestant</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+
+        <div class="social-profiles">
+            <ul class="flex justify-content-start justify-content-lg-center align-items-center">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            </ul>
+        </div><!-- .social-profiles -->
+    </nav><!-- .site-navigation -->
+
+    <div class="nav-bar-sep d-lg-none"></div>
+
+
+  
+
+    <script type='text/javascript' src="{{url_for ('static', filename = 'js/jquery.js')}}"></script>
+    <script type='text/javascript' src="{{url_for ('static', filename = 'js/custom.js')}}"></script>
+    <script type='text/javascript' src="{{url_for ('static', filename = 'js/count.js')}}"></script>
+    <script type='text/javascript' src="{{url_for ('static', filename = 'js/js.js')}}"></script>
+    {% block body %}
+    
+    {% endblock %}
+</body>
+
+</html>

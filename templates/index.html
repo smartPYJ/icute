@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+{% block body %}
+
+
+
+{% block nav %}
+
+
+{% endblock %}
+
+
+<div class="outer-container ">
+    <div class="container portfolio-page">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 no-padding">
+                <div class="portfolio-content">
+                    <figure>
+                        <img src="{{url_for ('static', filename = 'images/1.jpg')}}" alt="">
+                    </figure>
+
+                    <div class="entry-content flex flex-column align-items-center justify-content-center">
+                        <h3><a href="#">Name</a></h3>
+
+                        <ul class="flex flex-wrap justify-content-center">
+                            <li><a href="contestant.html">Profile</a></li>
+                            <li><a href="#">Tree</a></li>
+
+                        </ul>
+                        <div class="row">
+                            <h6 style="margin-left: 18px; margin-right:9px;"><strong>SUP</strong></h6>
+                            <span  id="cute"  class="fa fa-heart align-items-right fa-beat fa-4x" onclick="count()" style="color: 
+                        blueviolet; font-size:large;">
+                            </span>
+                            <h6 style="margin-left:10px; margin-right: 10px;"><strong id="support">0</strong></h6>
+                        </div>
+                    </div><!-- .entry-content -->
+                </div><!-- .portfolio-content -->
+            </div><!-- .col -->
+
+        </div>
+    </div>
+</div>
+
+
+<div class="scroll-down flex flex-column justify-content-center align-items-left d-none d-lg-block">
+    <span class="arrow-down flex justify-content-center align-items-center"><img
+            src="{{url_for ('static', filename = 'images/arrow-down.png')}}" alt="arrow"></span>
+
+</div><!-- .scroll-down -->
+
+<div class="top-position flex flex-column justify-content-left align-items-center d-none d-lg-block">
+    <h6><strong>Top Cute</strong> </h6>
+    <figure class="comment-author-avatar justify-content-center">
+        <img style="margin-left: 18px; margin-right:9px;"src="{{url_for ('static', filename = 'images/sofia.jpg')}}" alt="Cute">
+    </figure>
+    <h6 style="margin-left: 10px;">Smart Monday</h6>
+    <div class="row fa-cute">
+        <h6 style="margin-left: 18px; margin-right:9px;"><strong>SUP</strong></h6>
+        <i  id="cute" class="fa fa-heart align-items-right fa-cute " onclick="count()"
+            style=" font-size:large;">
+    </i>
+        <h6 style="margin-left:10px; margin-right: 10px;""><strong id="topcute">0</strong></h6>
+
+    </div>
+
+
+</div><!-- .scroll-down -->
+{% endblock %}

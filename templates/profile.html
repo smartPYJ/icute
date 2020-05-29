@@ -1,0 +1,163 @@
+{% extends "layout.html" %}
+
+{% block title%}
+{% endblock %}
+
+{% block body %}
+{% block nav %}
+
+{% endblock %}
+
+<div class="nav-bar-sep d-lg-none"></div>
+<div class="outer-container">
+    <div class="single-post">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="breadcrumbs flex align-items-center">
+
+                    </ul><!-- .breadcrumbs -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="featured-img">
+                        <figure>
+                            <img src="{{url_for ('static', filename = 'images/single-portfolio.png') }}" alt="">
+
+                        </figure>
+                    </div><!-- .content-area -->
+                    <div class="row fa-cute">
+                        <h5 style="margin-left:27px; margin-right: 17px;"><strong>SUP</strong></h5>
+                        <span  id="cute" class="fa fa-heart checked align-items-right fa-cute" onclick="count()"
+                            style=" font-size:x-large;">
+                        </span>
+                        <h5 style="margin-left:17px; margin-right: 17px;"><strong id="support">0</strong></h5>
+
+                    </div>
+
+
+                </div><!-- .col -->
+
+                <div class="col-12 col-lg-8">
+                    <div class="content-area">
+                        <header class="entry-header">
+                            <div class="post-meta">
+                                <a href="#">Name</a>
+                            </div><!-- .meta-post -->
+
+                            <h3>Smart Monday</h3>
+
+
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content">
+                            <p>Get the latest fashion tips and outfit ideas from your favorite celebrities and
+                                designers. Click through runway and front row photos from fashion week shows in New
+                                York, London, Paris, and Milan. Plus: browse key accessories like bags, shoes, and
+                                sunglasses, must-have denim </p>
+
+                        </div><!-- .entry-content -->
+                    </div><!-- .content-area -->
+                </div><!-- .col-12 -->
+
+                <aside class="col-12 col-lg-3 offset-lg-1">
+                    <div class="entry-meta">
+                        <div class="posted-date">
+                            <label>Date</label>
+
+                            <span class="date-format"><a href="#">December 20, 2020</a></span>
+                        </div><!-- .posted-date -->
+
+                        <div class="post-category">
+                            <label>Category</label>
+                            <span><a href="#">No make-up</a></span>
+                        </div><!-- .post-category -->
+
+
+                        <div class="post-share">
+                            <label>link</label>
+                            <ul>
+                                <li class="fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="in"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li class="tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div><!-- .post-share -->
+                    </div><!-- .entry-meta -->
+                </aside><!-- .col-md-3 -->
+
+                <div class="col-12 col-lg-7">
+                    <div class="content-area">
+                        <div class="post-comments">
+                            <h3 class="comments-title"><span class="comments-number"> Comments</span></h3>
+
+                            <ol class="comment-list">
+                                <li class="comment">
+                                    <article class="comment-body">
+
+                                        <div class="comment-wrap">
+                                            <div class="comment-author">
+                                                <span class="fn">
+                                                    <a href="#">Sofia Joelsson,</a>
+                                                </span><!-- .fn -->
+
+                                                <span class="comment-meta">
+                                                    <a href="#">Dec 018 2018</a>
+                                                </span><!-- .comment-meta -->
+                                            </div><!-- .comment-author -->
+
+                                            <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet,
+                                                consectetur, adipisci velit, sed quia non numquam eius modi tempora.
+                                            </p>
+
+                                            <div class="reply">
+                                                <div class="row">
+                                                    <h6 style="margin-right:9px;">Like</h6>
+                                                    <span class="fa fa-thumbs-up checked align-items-right"
+                                                        style="color:rgb(231, 1, 231); font-size:large;">
+                                                    </span>
+                                                    <h6 style="margin-right:30px;margin-left: 10px;">0</h6>
+
+
+                                                    <h6 style="margin-right: 9px;">Dislike</h6>
+                                                    <span class="fa fa-thumbs-down checked align-items-right"
+                                                        style="color:rgb(231, 1, 231); font-size:large;"> </span>
+                                                    <h6 style="margin-left: 10px;">0</h6>
+                                                </div>
+
+
+                                            </div><!-- .reply -->
+                                        </div><!-- .comment-wrap -->
+
+                                        <div class="clearfix"></div>
+                                    </article><!-- .comment-body -->
+                                </li><!-- .comment -->
+                            </ol><!-- .comment-list -->
+                        </div><!-- .post-comments -->
+
+                        <div class="comments-form">
+                            <div class="comment-respond">
+                                <h3 class="comment-reply-title">Leave a comment</h3>
+
+                                <form class="comment-form">
+                                    <input type="text" placeholder="Name">
+                                    <input type="email" placeholder="Email">
+                                    <input type="url" placeholder="Website">
+                                    <textarea rows="4" placeholder="Messages"></textarea>
+                                    <button class=" btn btn-icute"> comment!</button>
+                                </form><!-- .comment-form -->
+                            </div><!-- .comment-respond -->
+                        </div><!-- .comments-form -->
+                    </div><!-- .content-area -->
+                </div><!-- .col-12 -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .single-post -->
+</div><!-- .outer-container -->
+
+
+
+
+{% endblock %}NG
+9+
